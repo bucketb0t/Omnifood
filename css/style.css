@@ -6,14 +6,10 @@ Font sizes (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 
 -Font weights
+Default: 400
 
 -Line heigts
 Default: 1;
-
-
-SPACING SYSTEM (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-
 
 --- 02 COLORS
 
@@ -25,7 +21,26 @@ Primary: #e67e22
 -Greys
 #555
 
+--- 05 SHADOWS
+
+--- 06 BORDER-RADIUS
+
+--- 07 WHITESPACE
+
+-Spacing System (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
 */
+
+
+html{
+    /*
+    Turning the default 16px font-size to 10px;
+    10px / 16px = 0.625=62.5%
+    This is done in order to use rem, for dynamic web design witht the usage of max-width
+    */
+    font-size: 62.5%;
+}
 
 
 *{
@@ -39,4 +54,23 @@ body{
     line-height: 1;
     font-weight: 400;
     color: #555;
+}
+
+.test{
+    width: 1000px;
+    background-color: red;
+    padding: 100px;
+}
+
+
+
+.hero{
+    max-width: 130rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hero-img{
+    width: 100%;
 }
