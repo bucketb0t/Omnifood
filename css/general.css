@@ -34,7 +34,9 @@ Primary: #e67e22
 --- 05 SHADOWS
 
 --- 06 BORDER-RADIUS
-9px
+Default: 9px
+Medium: 11px
+
 
 --- 07 WHITESPACE
 
@@ -147,7 +149,7 @@ body {
     border-radius: 9px;
 
     /*Put transition on original "static" state*/
-    transition: background-color 0.3s;
+    transition: all 0.3s;
 }
 
 .btn--full:link,
@@ -178,4 +180,8 @@ body {
 
 .margin-right-sm {
     margin-right: 1.6rem !important;
+}
+
+strong {
+    font-weight: 500;
 }
